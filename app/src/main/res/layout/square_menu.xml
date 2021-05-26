@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_gravity="center"
+              android:background="@color/colorPrimary"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/colorSecondPrimary"
+            android:text="Нажмите на все числа по порядку"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif"
+            android:id="@+id/textView2"
+            android:layout_marginTop="30dp" />
+
+    <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Выберите размер таблицы:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif"
+            android:id="@+id/textView"
+            android:layout_marginTop="30dp" />
+
+    <TableLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="25dp">
+        <TableRow>
+            <Button android:layout_margin="2dp" android:foreground="?android:attr/selectableItemBackground" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="5x5" android:onClick="set5" android:id="@+id/b5"/>
+            <Button android:layout_margin="2dp" android:foreground="?android:attr/selectableItemBackground" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="6x6" android:onClick="set6" android:id="@+id/b6"/>
+            <Button android:layout_margin="2dp" android:foreground="?android:attr/selectableItemBackground" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="7x7" android:onClick="set7" android:id="@+id/b7"/>
+            <Button android:layout_margin="2dp" android:foreground="?android:attr/selectableItemBackground" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="8x8" android:onClick="set8" android:id="@+id/b8"/>
+            <Button android:layout_margin="2dp" android:foreground="?android:attr/selectableItemBackground" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:text="9x9" android:onClick="set9" android:id="@+id/b9"/>
+        </TableRow>
+    </TableLayout>
+
+
+    <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_gravity="bottom|center"
+            android:gravity="center"
+            android:text="Старт"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:onClick="startSquareGame"
+            android:layout_margin="10dp"
+    />
+    <Button
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_gravity="bottom|center"
+            android:gravity="center"
+            android:text="Назад"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:onClick="openMenu"
+            android:layout_margin="10dp"
+    />
+
+</LinearLayout>

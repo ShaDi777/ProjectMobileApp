@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_gravity="center"
+              android:gravity="center"
+              android:background="@color/colorPrimary"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView android:elevation="30dp"
+            android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/colorSecondPrimary"
+              android:layout_margin="10dp"
+              android:gravity="center"
+              android:textColor="@color/black"
+              android:fontFamily="sans-serif"
+              android:textSize="30dp"
+              android:text="Проведите в направлении, заданном стрелкой и ее цветом\n\nЗеленый = \u21BB \n Красный = \u21BA \n Синий = \u21C4"
+    />
+
+    <Button
+            android:elevation="30dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_gravity="bottom|center"
+            android:gravity="center"
+            android:text="Старт"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:onClick="startArrowGame"
+            android:layout_margin="10dp"
+    />
+    <Button
+            android:elevation="30dp"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_gravity="bottom|center"
+            android:gravity="center"
+            android:text="Назад"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:onClick="openMenu"
+            android:layout_margin="10dp"
+    />
+</LinearLayout>

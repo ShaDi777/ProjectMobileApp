@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="ru.myitschool.projectsamsung">
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <application
+
+            android:allowBackup="true"
+            android:icon="@mipmap/icon_eye_launcher_foreground"
+            android:label="@string/app_name"
+            android:roundIcon="@mipmap/icon_eye_launcher_foreground"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".bubbles.BubbleGameActivity"  android:screenOrientation="portrait" android:theme="@style/NoNavigationBar"/>
+        <activity android:name=".squares.SquareGameActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".numbers.NumbersGameActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".arrows.ArrowGameActivity"  android:screenOrientation="portrait"/>
+        <activity android:name=".squares.SquareMenu"  android:screenOrientation="portrait"/>
+        <activity android:name=".bubbles.BubbleMenu"  android:screenOrientation="portrait"/>
+        <activity android:name=".numbers.NumberMenu"  android:screenOrientation="portrait"/>
+        <activity android:name=".arrows.ArrowMenu"  android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
